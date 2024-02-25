@@ -117,20 +117,19 @@ header .navbar li .active,header .navbar a:hover {
 .home {
   position: relative;
   width: 100%;
-  min-height: 91vh;
+  height: 92.5vh;
   color: #000000;
   display: flex;
   background: url(img/new_bg.png) no-repeat;
   /* background-image: linear-gradient(to right, rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url(Images/new_Home_bg.jpg); 
   background-repeat: no-repeat;
   background-size: contain;*/
-  align-items: center;
+  
   /* background-color: var(--bg-color);*/
   /* background: url(images/background.png) no-repeat; */
   /* background: url(img/bg.jpg) no-repeat; */
   /* background: url(img/toon/bg.jpg) no-repeat; */
   background-size: cover;
-  background-position: right center;
 }
 .home-text {
   max-width: 500px;
@@ -178,8 +177,8 @@ span .last_logo{
 {
  float: left;
  width: 35vh;
- padding: 10px;
- height: 300px; /* Should be removed. Only for demonstration */
+ align-items: center;
+ height: fit-content;
 }
 
 .column-right
@@ -188,37 +187,44 @@ span .last_logo{
  width: 80vh;
  margin-left: 10%;
  padding: 10px;
- height: 300px; /* Should be removed. Only for demonstration */
+ height: fit-content; /* Should be removed. Only for demonstration */
 }
 
 .row{
     display: flex;
-    width: 100%;
 }
 
 img {
     height: 100px;
   }
 
-.about_icon_title h2{
+.home_icon_title h2{
 max-width: 250px;
 text-align: left;
 font-size: var(--h2-font);
 color: var(--primary);
 }
 
-ul li a i {
-    font-size: 45px;
-    margin-left: 18px;
-    color: var(--primary);
-  }
-
-  .copyright {
-    padding: 20px;
-    text-align: center;
-    background: var(--primary);
+.home_icon_title h2 span{
+  color: black;
   }
   
+
+.home_icon_title i{
+    font-size: 45px;
+    margin-left: 20px;
+    color: var(--primary);
+}
+
+#playstore{
+  margin-left: 26px;
+}
+
+
+.home_icon_title{
+  padding: 0%;
+  align-self: center;
+}
 
 /* About Page */
 
@@ -248,21 +254,31 @@ ul li a i {
     color:  var(--bg); 
     font-size: var(--p-font);
   }
-
-  ul li a h2
+/* 
+.home-img ul li a h2
 {
     max-width: 250px;
     text-align: left;
     font-size: 4vh;
-    color: var(--primary);
+    color: #f60091;
+    /* color: var(--primary); 
 }
-ul li a h2:hover
+.home-img li a h2:hover
 {
     max-width: 250px;
-    text-align: left;
-    font-size: 4vh;
+    text-align: center;
+    font-size: 5vh;
     color: white;
+} */
+
+.about_icon_title{
+  align-items: center;
+  padding: auto;
 }
 
-
-    
+/* Copyright */
+.copyright {
+  padding: 20px;
+  text-align: center;
+  background: var(--primary);
+}
